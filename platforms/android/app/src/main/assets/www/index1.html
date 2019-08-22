@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>NetComanda</title>
+
+<link rel="stylesheet" href="CSS/fonts.css" type="text/css">
+
+<link href="CSS/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="CSS/bootstrap-material-design.css" rel="stylesheet">
+<!--<<link href="CSS/ripples.min.css" rel="stylesheet">-->
+<!--<link href="CSS/snackbar.min.css" rel="stylesheet">-->
+<link href="CSS/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onLoad="consultar_mesa();">
+<div class="navbar-collapse navbar-responsive-collapse collapse" aria-expanded="false">
+<ul class="nav navbar-nav">
+<li><a href="index.html">Início</a></li>
+<li><a href="index3.html">Comandas</a></li>
+
+</ul>
+</div>
+<div class="col-lg-12 col-sm-12 col-xs-12 nopadding container" id="top-container">
+<div class="col-lg-12 col-sm-12 col-xs-12 nopadding" id="header">
+<div class="bs-component">
+<div class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="javascript:void(0)"><div class="cm-gourmet-monocolor-icon "></div></a>
+<center class="navtitle"><h3 class="title">ABRIR MESA</h3></center>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-12 col-sm-12 col-xs-12 jumbotron install" id="content">
+    <div class="col-lg-12 col-sm-12 col-xs-12" style="display: inline;">
+    <a href="javascript:history.back()" class="btn btn-default btn-fab btn-fab-mini" style="float: left; width: 35px; min-width: 30px; height: 35px; margin-top: -9px; margin-bottom: 15px; ">
+    <i class="material-icons">&#xE5C4;</i>
+    </a>
+    </div>
+<br />
+<div class="col-lg-12 col-sm-12 col-xs-12">
+    <form>
+    <div class="col-lg-2 col-sm-2 col-xs-8 col-xs-offset-0  col-sm-offset-4 col-lg-offset-4">
+    <h2>Mesa: </h2>
+    </div>
+    <div class="col-lg-1 col-sm-2 col-xs-4">
+     <h2 id="numeromesa"></h2>
+    </div>
+    <div class="col-lg-12  col-sm-12 col-xs-12" >
+    <div class="form-group form-group-lg is-empty">
+    <label class="control-label" for="inputLarge">Número da Comanda</label>
+    <input class="form-control" type="number" name="numerocomanda" id="numerocomanda" style="text-align: center;">
+     <input type="hidden" name="numeromesa" data-numeromesa="numeromesa"  id="numeromesa"  value="" class="form-control" >  
+    </div>
+  </div>
+   <div class="col-lg-12  col-sm-12 col-xs-12 col-lg-offset-2 col-sm-offset-2 col-xs-pull-2">
+   <button name="comanda" id="comanda" class="btn btn-raised">Abrir Comanda</button>
+   </div>
+   <div class="col-lg-12  col-sm-12 col-xs-12">
+   <div class="alert-success" id="sucesso" style="font-size:48px;font-weight:bold; color:#000;"></div>
+</div>
+</form>
+
+</div>
+</div>
+</div>
+
+
+<!--<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="barcodescanner.js"></script>-->
+<script src="JS/jquery-3.2.1.js"></script>
+<!--<script src="JS/jquery.base64.js"></script>-->
+<script src="JS/jquery-ui.min.js"></script>
+<script src="JS/bootstrap.js"></script>
+<script src="JS/ripples.min.js"></script>
+<script src="JS/material.min.js"></script>
+<script src="JS/comanda.js"></script>
+<!--<script src="JS/snackbar.min.js"></script>
+<script src="JS/jquery.nouislider.min.js"></script>
+<script src="JS/w3.js"></script>
+<script src="JS/list.min.js"></script>
+<script src="JS/core.js"></script>-->
+<script type="text/javascript">
+    
+	
+    
+    </script>
+</body>
+</html>
